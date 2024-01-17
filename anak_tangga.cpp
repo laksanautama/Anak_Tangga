@@ -39,5 +39,31 @@ void jml_cara(int n) {
 int main(){
 map <int, int> steps;
 
-return 0;
+// Input jumlah anak tangga
+    int n;
+    char login;
+
+    //diulang dari sini
+    do {
+    cout << "Input: ";
+    cin >> n;
+
+    // Panggil fungsi untuk menghitung dan menampilkan jumlah cara
+    jml_cara(n);
+
+    // Membuat program dapat diulang
+    cout << endl << "Ngulang program nggak nih? (y/n)" << endl;
+    cout << "me: ";
+    cin >> login;
+    system("cls");
+
+    }while (login == 'Y' || login == 'y');
+
+    cout << "================" << endl;
+    cout << "Program selesai. " << endl;
+    cout << "================" << endl;
+
+    return 0;
 }
+
+
